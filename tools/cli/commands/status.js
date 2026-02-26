@@ -57,13 +57,16 @@ module.exports = {
       if (options.verbose) {
         const { glob } = require('glob');
         for (const mod of modules) {
-          const modDir = path.join(bmadDir, mod.id || mod.name || '');
+          const moduleName = typeof mod === 'string' ? mod : (mod.id || mod.name || '');
+          if (!moduleName) continue;
+
+          const modDir = path.join(bmadDir, moduleName);
           if (!(await fs.pathExists(modDir))) continue;
 
           const agents = await glob('agents/**/*.agent.yaml', { cwd: modDir });
           const workflows = await glob('workflows/**/{workflow.yaml,workflow.md}', { cwd: modDir });
 
-          await prompts.log.info(`Module "${mod.id || mod.name}": ${agents.length} agent(s), ${workflows.length} workflow(s)`);
+          await prompts.log.info(`Module "${moduleName}": ${agents.length} agent(s), ${workflows.length} workflow(s)`);
         }
       }
 
