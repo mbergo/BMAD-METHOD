@@ -8,7 +8,7 @@
 - 💬 FOCUS on discovering and cataloging all relevant project artifacts
 - 🎯 IDENTIFY sources that provide high-value knowledge for RAG retrieval
 - ⚠️ ABSOLUTELY NO TIME ESTIMATES - AI development speed has fundamentally changed
-- ✅ YOU MUST ALWAYS SPEAK OUTPUT In your Agent communication style with the config `{communication_language}`
+- ✅ YOU MUST ALWAYS SPEAK OUTPUT in your Agent communication style with the config `{communication_language}`
 
 ## EXECUTION PROTOCOLS:
 
