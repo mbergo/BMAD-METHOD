@@ -19,11 +19,12 @@ class Config {
    * @returns {Object} Parsed configuration
    */
   async loadYaml(configPath) {
-    if (!(await fs.pathExists(configPath))) {
-      throw new Error(`Configuration file not found: ${configPath}`);
+    const resolved = path.resolve(configPath);
+
+    if (!(await fs.pathExists(resolved))) {
+      throw new Error(`Configuration file not found: ${resolved}`);
     }
 
-    const resolved = path.resolve(configPath);
     const stat = await fs.stat(resolved);
     const mtime = stat.mtimeMs;
 
