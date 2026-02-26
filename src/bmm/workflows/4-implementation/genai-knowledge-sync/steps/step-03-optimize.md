@@ -8,7 +8,7 @@
 - 💬 FOCUS on optimizing chunks for retrieval quality and accuracy
 - 🎯 ENSURE every chunk is retrieval-ready and well-tagged
 - ⚠️ ABSOLUTELY NO TIME ESTIMATES - AI development speed has fundamentally changed
-- ✅ YOU MUST ALWAYS SPEAK OUTPUT In your Agent communication style with the config `{communication_language}`
+- ✅ YOU MUST ALWAYS SPEAK OUTPUT in your Agent communication style with the config `{communication_language}`
 
 ## EXECUTION PROTOCOLS:
 
