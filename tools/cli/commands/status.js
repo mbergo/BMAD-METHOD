@@ -64,7 +64,7 @@ module.exports = {
           if (!(await fs.pathExists(modDir))) continue;
 
           const agents = await glob('agents/**/*.agent.yaml', { cwd: modDir });
-          const workflows = await glob('workflows/**/{workflow.yaml,workflow.md,workflow-*.md}', { cwd: modDir });
+          const workflows = await glob('workflows/**/*.{yaml,yml,md}', { cwd: modDir });
 
           await prompts.log.info(`Module "${moduleName}": ${agents.length} agent(s), ${workflows.length} workflow(s)`);
         }
