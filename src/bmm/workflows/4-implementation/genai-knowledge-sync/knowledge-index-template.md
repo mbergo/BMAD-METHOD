@@ -81,6 +81,6 @@ _RAG-optimized knowledge base for AI agent retrieval. Each chunk is self-contain
 ### Embedding Recommendations
 
 - **Model:** Use an embedding model that handles technical content well
-- **Chunk Overlap:** 50-100 characters overlap between adjacent chunks from same source
+- **Chunk Overlap:** 50-100 characters overlap between adjacent chunks from the same source
 - **Metadata Filters:** Always filter by category and priority for focused retrieval
 - **Top-K:** Retrieve 3-5 chunks per query for optimal context balance
